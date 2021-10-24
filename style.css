@@ -8,9 +8,15 @@ html {
   background-color: black;
 }
 
+#GameContainerContainer {
+  padding-top: 20px;
+  padding-botton:20px;
+}
+
 #GameContainer {
-  height: 200px;
-  width: 400px;
+  margin: auto;
+  height: 500px;
+  width: 1000px;
   background-color: yellow;
   
 }
