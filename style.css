@@ -14,9 +14,16 @@ html {
 }
 
 #GameContainer {
+  position: relative;
   margin: auto;
   height: 31.25em;
   width: 62.5em;
   background-color: yellow;
-  
+}
+
+#StartGame {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
 }
