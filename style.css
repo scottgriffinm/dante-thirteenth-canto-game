@@ -9,6 +9,26 @@ html {
   background-color: black;
 }
 
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
 #GameContainerContainer {
   padding-top: 1.25em;
   padding-botton: 1.25em;
@@ -19,7 +39,7 @@ html {
   margin: auto;
   height: 31.25em;
   width: 62.5em;
-  background-color: gar;
+  background-color: black;
 }
 
 #StartGame {
