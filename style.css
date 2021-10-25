@@ -3,6 +3,7 @@
 /* default to border-box */
 html {
   box-sizing: border-box;
+  font-family: Garamond, serif;
   font-size: 16px;
   color: white;
   background-color: black;
@@ -18,12 +19,16 @@ html {
   margin: auto;
   height: 31.25em;
   width: 62.5em;
-  background-color: yellow;
+  background-color: gar;
 }
 
 #StartGame {
   position: absolute;
+  width: 5em;
+  height: 5em;
   bottom: 0;
-  left: 50%;
+  left:50%;
+  transform: translateX(-50%); -webkit-transform: translateX(-50%);
   text-align: center;
+  font-size: 2em;
 }
