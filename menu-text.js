@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Nessus had not yet reached the other side\n  When we moved forward into woods unmarked\n  By any path.';
+var txt = 'Nessus had not yet reached the other side when we moved forward into woods unmarked by any path.';
 
 var speed = 50;
 

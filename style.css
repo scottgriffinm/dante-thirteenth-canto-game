@@ -46,6 +46,8 @@ a:active {
   position: absolute;
   width: 19em;
   height: 5em;
+  left: 20%;
+  top: 20%;
   font-size: 1em;
 }
 
