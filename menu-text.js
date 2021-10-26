@@ -1,9 +1,10 @@
 var i = 0;
-var txt = 'Nessus had not yet reached the other side when we moved forward into woods unmarked by any path.';
+var stringArray = ['Nessus had not yet reached the other side', 'When we moved forward into woods', 'Unmarked by any path.' ];
 
 var speed = 50;
 
-
+<!-- Function takes a list of strings (poem lines) and an element id,
+    typewrites them one at a time --> 
 
   function typeWriter(txt, elementId) {
     if (i < txt.length) {
