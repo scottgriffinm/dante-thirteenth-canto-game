@@ -10,12 +10,12 @@ var speed = 50;
     if (i < txt.length) {
       document.getElementById(elementId).innerHTML += txt.charAt(i);
       i++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(txt,elementId), speed);
     }
   }
 
 for (var iii = 0; iii < arrayLength; iii++) {
-    typeWriter(stringArray[i], 'beginningQuote');
+    typeWriter(stringArray[iii], 'beginningQuote');
   
 }
   
