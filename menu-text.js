@@ -5,9 +5,9 @@ var speed = 50;
 
 
 
-  function typeWriter() {
+  function typeWriter(txt, elementId) {
     if (i < txt.length) {
-      document.getElementById("beginningQuote").innerHTML += txt.charAt(i);
+      document.getElementById(elementId).innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
     }
