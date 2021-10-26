@@ -1,10 +1,10 @@
 var i = 0;
-var stringArray = ['Nessus had not yet reached the other side', 'When we moved forward into woods', 'Unmarked by any path.' ];
+var stringArray = ['Nessus had not yet reached the other side', 'When we moved forward into woods', 'Unmarked by any path.'];
+var arrayLength = stringArray.length;
 
 var speed = 50;
 
-<!-- Function takes a list of strings (poem lines) and an element id,
-    typewrites them one at a time --> 
+
 
   function typeWriter(txt, elementId) {
     if (i < txt.length) {
@@ -14,4 +14,8 @@ var speed = 50;
     }
   }
 
-typeWriter()
+for (var iii = 0; iii < arrayLength; iii++) {
+    typeWriter(stringArray[i], 'beginningQuote');
+  
+}
+  
