@@ -29,6 +29,15 @@ a:active {
   color: white;
 }
 
+.Quotes {
+  position: absolute;
+  width: 19em;
+  height: 5em;
+  left: 20%;
+  top: 20%;
+  font-size: 1em;
+}
+
 #GameContainerContainer {
   padding-top: 1.25em;
   padding-botton: 1.25em;
@@ -40,15 +49,6 @@ a:active {
   height: 31.25em;
   width: 62.5em;
   background-color: black;
-}
-
-#beginningQuote {
-  position: absolute;
-  width: 19em;
-  height: 5em;
-  left: 20%;
-  top: 20%;
-  font-size: 1em;
 }
 
 #startGame {
