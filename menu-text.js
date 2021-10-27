@@ -15,25 +15,13 @@ var elementId = 'beginningQuote';
       iii++;
       setTimeout(typeWriter, speed);
     } 
-    else if (iii = len1) {
-      document.getElementById(elementId).innerHTML += "\n  ";
-      document.getElementById(elementId).innerHTML += arrayOfStrings[1].charAt(i2);
-      i2++;
-      iii++;
-      setTimeout(typeWriter, speed);
-    } else if (iii < (len1+len2)) {
+     else if (iii < (len1+len2)) {
       document.getElementById(elementId).innerHTML += arrayOfStrings[1].charAt(i2);
       i2++;
       iii++;
       setTimeout(typeWriter, speed);
     } 
-    else if (iii = (len1+len2)) {
-      document.getElementById(elementId).innerHTML += "\n  ";
-      document.getElementById(elementId).innerHTML += arrayOfStrings[2].charAt(i3);
-      i3++;
-      iii++;
-      setTimeout(typeWriter, speed);
-    } else if (iii < (len1+len2+len3)) {
+     else if (iii < (len1+len2+len3)) {
       document.getElementById(elementId).innerHTML += arrayOfStrings[2].charAt(i3);
       i3++;
       iii++;
