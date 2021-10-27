@@ -7,16 +7,40 @@ var len2 = arrayOfStrings[1].length;
 var len3 = arrayOfStrings[2].length;
 var elementId = 'beginningQuote';
 
+
   function typeWriter() {
     if (iii < len1) {
       document.getElementById(elementId).innerHTML += arrayOfStrings[0].charAt(i1);
       i1++;
       iii++;
       setTimeout(typeWriter, speed);
-    } else if (true) {
-      
+    } 
+    else if (iii = len1) {
+      document.getElementById(elementId).innerHTML += "\n  ";
+      document.getElementById(elementId).innerHTML += arrayOfStrings[1].charAt(i2);
+      i2++;
+      iii++;
+      setTimeout(typeWriter, speed);
+    } else if (iii < (len1+len2)) {
+      document.getElementById(elementId).innerHTML += arrayOfStrings[1].charAt(i2);
+      i2++;
+      iii++;
+      setTimeout(typeWriter, speed);
+    } 
+    else if (iii = (len1+len2)) {
+      document.getElementById(elementId).innerHTML += "\n  ";
+      document.getElementById(elementId).innerHTML += arrayOfStrings[2].charAt(i3);
+      i3++;
+      iii++;
+      setTimeout(typeWriter, speed);
+    } else if (iii < (len1+len2+len3)) {
+      document.getElementById(elementId).innerHTML += arrayOfStrings[2].charAt(i3);
+      i3++;
+      iii++;
+      setTimeout(typeWriter, speed);
     }
     
   }
 
-  
+
+  typeWriter()
