@@ -46,7 +46,7 @@ a:active {
 #GameContainer {
   position: relative;
   margin: auto;
-  height: 31.25em;
+  height: 31.25em; 
   width: 62.5em;
   background-color: black;
 }
