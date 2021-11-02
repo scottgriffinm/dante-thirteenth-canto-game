@@ -48,19 +48,25 @@ if (typeWriter(stringArray) == 'im done now') {
   
   iii = 0; 
   i1 = 0; i2 = 0; i3 = 0;
-  var stringArray2 = ['',''];
+  var stringArray2 = ['By men with plough and barrow, none infests','Thickets that are as rough or dense as this.','Here the repellent Harpies make their nests,'];
   len1 = stringArray2[0].length;
   len2 = stringArray2[1].length;
   len3 = stringArray2[2].length;
+  document.getElementById(elementId1).innerHTML = '';
+  document.getElementById(elementId2).innerHTML = '';
+  document.getElementById(elementId3).innerHTML = '';
   
   if (typeWriter(stringArray2) == 'im done now') {
   
     iii = 0; 
     i1 = 0; i2 = 0; i3 = 0;
-    var stringArray3 = ['',''];
+    var stringArray3 = ['Who drove the Trojans from the Strophades','With dire announcements of the coming woe.','They have broad wings, a human neck and face,'];
     len1 = stringArray2[0].length;
     len2 = stringArray2[1].length;
     len3 = stringArray2[2].length;
+    document.getElementById(elementId1).innerHTML = '';
+    document.getElementById(elementId2).innerHTML = '';
+    document.getElementById(elementId3).innerHTML = '';
     
     typeWriter(stringArray3)
   }
