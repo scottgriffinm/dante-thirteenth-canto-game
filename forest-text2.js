@@ -10,7 +10,7 @@ var elementId2 = 'line2';
 var elementId3 = 'line3';
 
 
-  function typeWriter() {
+  function typeWriter(arrayOfStrings) {
     if (iii < len1) {
       document.getElementById(elementId1).innerHTML += arrayOfStrings[0].charAt(i1);
       i1++;
@@ -31,6 +31,3 @@ var elementId3 = 'line3';
     }
     
   }
-
-
-  typeWriter()
