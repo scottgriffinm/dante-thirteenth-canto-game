@@ -1,6 +1,6 @@
 var iii = 0;
 var i1 = 0, i2 = 0, i3 = 0;
-var arrayOfStrings = ['The leaves not green, earth0hued;', 'When we moved forward into woods', 'Unmarked by any path.'];
+var arrayOfStrings = ['The leaves not green, earth-hued;', '', ''];
 var speed = 50;
 var len1 = arrayOfStrings[0].length;
 var len2 = arrayOfStrings[1].length;
@@ -10,7 +10,8 @@ var elementId2 = 'line2';
 var elementId3 = 'line3';
 
 
-  function typeWriter() {
+  function typeWriter(arrayOfStrings) {
+    
     if (iii < len1) {
       document.getElementById(elementId1).innerHTML += arrayOfStrings[0].charAt(i1);
       i1++;
@@ -29,8 +30,16 @@ var elementId3 = 'line3';
       iii++;
       setTimeout(typeWriter, speed);
     }
+    if (iii == (len1+len2+len3)) {
+      iii++;
+      return 'im done now';
+    }
     
   }
 
 
-  typeWriter()
+if (typeWriter(arrayOfStrings) == 'im done now') {
+  
+  if 
+}
+  
