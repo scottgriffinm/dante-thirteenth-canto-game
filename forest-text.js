@@ -1,4 +1,4 @@
-var speed = 50;
+var speed = 100;
 var elementId1 = 'line1';
 var elementId2 = 'line2';
 var elementId3 = 'line3';
@@ -18,19 +18,19 @@ var len3 = stringArray[2].length;
       document.getElementById(elementId1).innerHTML += arrayOfStrings[0].charAt(i1);
       i1++;
       iii++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(arrayOfStrings), speed);
     } 
      else if (iii < (len1+len2)) {
       document.getElementById(elementId2).innerHTML += arrayOfStrings[1].charAt(i2);
       i2++;
       iii++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(arrayOfStrings), speed);
     } 
      else if (iii < (len1+len2+len3)) {
       document.getElementById(elementId3).innerHTML += arrayOfStrings[2].charAt(i3);
       i3++;
       iii++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(arrayOfStrings), speed);
     }
     if (iii == (len1+len2+len3)) {
       iii++;
@@ -38,10 +38,6 @@ var len3 = stringArray[2].length;
     }
     
   }
-
-
-
-
 
 
 if (typeWriter(stringArray) == 'im done now') {
@@ -68,11 +64,10 @@ if (typeWriter(stringArray) == 'im done now') {
     document.getElementById(elementId2).innerHTML = '';
     document.getElementById(elementId3).innerHTML = '';
     
-    typeWriter(stringArray3)
+    typeWriter(stringArray3);
   }
 
 }
-  
 
 
 
