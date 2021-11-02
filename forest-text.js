@@ -1,13 +1,15 @@
-var iii = 0;
-var i1 = 0, i2 = 0, i3 = 0;
-var arrayOfStrings = ['The leaves not green, earth-hued;', '', ''];
 var speed = 50;
-var len1 = arrayOfStrings[0].length;
-var len2 = arrayOfStrings[1].length;
-var len3 = arrayOfStrings[2].length;
 var elementId1 = 'line1';
 var elementId2 = 'line2';
 var elementId3 = 'line3';
+
+var iii = 0;
+var i1 = 0, i2 = 0, i3 = 0;
+
+var stringArray = ['The boughs not smooth, knotted and crooked-forked;', 'No fruit, but poisoned thorns. Of the wild beasts', 'Near Cecina and Corneto, that hate fields worked'];
+var len1 = stringArray[0].length;
+var len2 = stringArray[1].length;
+var len3 = stringArray[2].length;
 
 
   function typeWriter(arrayOfStrings) {
@@ -38,8 +40,47 @@ var elementId3 = 'line3';
   }
 
 
-if (typeWriter(arrayOfStrings) == 'im done now') {
+
+
+
+
+if (typeWriter(stringArray) == 'im done now') {
   
-  if 
+  iii = 0; 
+  i1 = 0; i2 = 0; i3 = 0;
+  var stringArray2 = ['',''];
+  len1 = stringArray2[0].length;
+  len2 = stringArray2[1].length;
+  len3 = stringArray2[2].length;
+  
+  if (typeWriter(stringArray2) == 'im done now') {
+  
+    iii = 0; 
+    i1 = 0; i2 = 0; i3 = 0;
+    var stringArray3 = ['',''];
+    len1 = stringArray2[0].length;
+    len2 = stringArray2[1].length;
+    len3 = stringArray2[2].length;
+    
+    typeWriter(stringArray3)
+  }
+
 }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
