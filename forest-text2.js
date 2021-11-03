@@ -36,10 +36,17 @@ function typeWriter() {
       i1 = 0, i2 = 0, i3 = 0;
       setTimeout(typeWriter, refreshSpeed);
     }
-  <!-- TODO: finish function for next line -->
-    if ((line1.innerHTML + line2.innerHTML + line3.innerHTML) == ('')
+  
+    if ((line1.innerHTML + line2.innerHTML + line3.innerHTML) == ('By men with plough and barrow, none infestsThickets that are as rough or dense as this.Here the repellent Harpies make their nests,')) {
+      line1.innerHTML = ""; line2.innerHTML = ""; line3.innerHTML = "";
       arrayOfStrings = ['Who drove the Trojans from the Strophades','With dire announcements of the coming woe.','They have broad wings, a human neck and face,'];
-
+      len1 = arrayOfStrings[0].length; len2 = arrayOfStrings[1].length; len3 = arrayOfStrings[2].length;
+      iii = 0;
+      i1 = 0, i2 = 0, i3 = 0;
+      setTimeout(typeWriter, refreshSpeed);
+    
+    }
+      
   
   }
 
