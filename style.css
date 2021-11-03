@@ -31,20 +31,17 @@ a:active {
 
 .Quotes {
   position: absolute;
-  width: 15em;
+  width: 30em;
   height: 5em;
   left: 20%;
   top: 20%;
   font-size: 1em;
 }
 
-#line1 {
+#line1, #line2, #line3 {
   width: 100%;
 }
 
-#line2 {
-  
-}
 
 .backImage {
   width:100%;
