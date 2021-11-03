@@ -36,6 +36,7 @@ function typeWriter() {
       i1 = 0, i2 = 0, i3 = 0;
       setTimeout(typeWriter, refreshSpeed);
     }
+    
   }
 
 
