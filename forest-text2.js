@@ -29,3 +29,15 @@ function typeWriter() {
     }
   }
 
+
+typeWriter()
+
+while (true)
+  if ((line1.innerHTML + line2.innerHTML + line3.innerHTML) == ('The boughs not smooth, knotted and crooked-forked;No fruit, but poisoned thorns. Of the wild beastsNear Cecina and Corneto, that hate fields worked')) {
+    
+    arrayOfStrings = [];
+    len1 = arrayOfStrings[0].length; len2 = arrayOfStrings[1].length; len3 = arrayOfStrings[2].length;
+    iii = 0;
+    i1 = 0, i2 = 0, i3 = 0;
+    
+  }

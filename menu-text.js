@@ -33,4 +33,4 @@ var elementId3 = 'line3';
   }
 
 
-  typeWriter()
+typeWriter()
