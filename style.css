@@ -54,32 +54,10 @@ a:active {
   transition: 5s opacity;
 }
 
-#forestQuotes1{
-    opacity: 0;
+#forestQuotes{
+  opacity: 0;
   transition: 5s opacity;
 }
-#forestQuotes2{
-    opacity: 0;
-  transition: 5s opacity;
-}
-#forestQuotes3{
-    opacity: 0;
-  transition: 5s opacity;
-}
-#forestQuotes4{
-    opacity: 0;
-  transition: 5s opacity;
-}
-#forestQuotes5{
-    opacity: 0;
-  transition: 5s opacity;
-}
-#forestQuotes6{
-    opacity: 0;
-  transition: 5s opacity;
-}
-
-
 
 #GameContainerContainer {
   padding-top: 1.25em;
