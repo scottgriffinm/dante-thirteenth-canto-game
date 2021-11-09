@@ -1,4 +1,5 @@
 var fq = document.getElementById('forestQuotes');
+var waitTime = 1;
 
 
 window.onload = function() {
@@ -7,14 +8,16 @@ window.onload = function() {
 }
 
 function fadein() {
-  if (fq.innerText == 'The leaves not green, earth-hued;') && (fq.style.opacity == '0'){
-    fq.style.opacity = '1';  
+  if ((fq.innerText == 'The leaves not green, earth-hued;') && (fq.style.opacity == '0')){
+    fq.style.opacity = '1';
+    setTimeout(function() {fadein}, waitTime)
   }
     
   
   
 }
 
+/*
         <div id="forestQuotes1" style="position:absolute;">
             The leaves not green, earth-hued;
         </div>
@@ -36,3 +39,4 @@ function fadein() {
         <div id="forestQuotes6" style="position:absolute;">
           &emsp;On every side, I heard wailing voices grieve,<br>&emsp;Yet I could not see anyone there to wail,
         </div>
+        */
