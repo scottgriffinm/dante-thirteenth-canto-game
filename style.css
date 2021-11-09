@@ -38,6 +38,7 @@ a:active {
   font-size: 1em;
 }
 
+
 #line1, #line2, #line3 {
   width: 100%;
 }
@@ -46,6 +47,11 @@ a:active {
 .backImage {
   width:100%;
   height:100%;
+}
+
+#menuQuotes {
+  opacity: 1;
+  transition: 1s opacity;
 }
 
 #GameContainerContainer {
