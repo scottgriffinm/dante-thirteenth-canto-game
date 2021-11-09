@@ -28,13 +28,14 @@ function typeWriter() {
       iii++;
       setTimeout(typeWriter, speed);
     }
+  
     if ((line1.innerHTML + line2.innerHTML + line3.innerHTML) == ('The boughs not smooth, knotted and crooked-forked;No fruit, but poisoned thorns. Of the wild beastsNear Cecina and Corneto, that hate fields worked')) {
       line1.innerHTML = ""; line2.innerHTML = ""; line3.innerHTML = "";
       arrayOfStrings = ['By men with plough and barrow, none infests','Thickets that are as rough or dense as this.','Here the repellent Harpies make their nests,'];
       len1 = arrayOfStrings[0].length; len2 = arrayOfStrings[1].length; len3 = arrayOfStrings[2].length;
       iii = 0;
       i1 = 0, i2 = 0, i3 = 0;
-      setTimeout(typeWriter, refreshSpeed);
+      setTimeout(typeWriter, speed);
     }
   
     if ((line1.innerHTML + line2.innerHTML + line3.innerHTML) == ('By men with plough and barrow, none infestsThickets that are as rough or dense as this.Here the repellent Harpies make their nests,')) {
@@ -43,7 +44,7 @@ function typeWriter() {
       len1 = arrayOfStrings[0].length; len2 = arrayOfStrings[1].length; len3 = arrayOfStrings[2].length;
       iii = 0;
       i1 = 0, i2 = 0, i3 = 0;
-      setTimeout(typeWriter, refreshSpeed);
+      setTimeout(typeWriter, speed);
     
     }
       
