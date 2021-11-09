@@ -1,4 +1,3 @@
-var fq = document.getElementById('forestQuotes');
 var waitTime = 1;
 
 
@@ -8,16 +7,23 @@ window.onload = function() {
 }
 
 function fadein() {
-  if ((fq.innerText == 'The leaves not green, earth-hued;') && (fq.style.opacity == '0')){
-    fq.style.opacity = '1';
+  if ((document.getElementById("forestQuotes").innerText == 'The leaves not green, earth-hued;') && (document.getElementById("forestQuotes").style.opacity == '0')){
+    document.getElementById("forestQuotes").style.opacity = '1';
     setTimeout(function() {fadein}, waitTime)
   }
-    
-  
-  
 }
 
 /*
+window.onload = function() {
+  window.setTimeout(fadein,
+                   1); //1 second
+}
+
+function fadein() {
+  document.getElementById('menuQuotes').style.opacity = '1';
+}
+
+
         <div id="forestQuotes1" style="position:absolute;">
             The leaves not green, earth-hued;
         </div>
