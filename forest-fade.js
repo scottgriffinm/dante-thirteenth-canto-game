@@ -1,16 +1,20 @@
+var displayTime = 10;
 var waitTime = 1;
 
 
 window.onload = function() {
-  window.setTimeout(fadein,
+  window.setTimeout(fadeinForest,
                    1); //1 second wait
 }
 
-function fadein() {
-  if ((document.getElementById("forestQuotes").innerText == 'The leaves not green, earth-hued;') && (document.getElementById("forestQuotes").style.opacity == '0')){
+
+function fadeinForest() {
+  // first action
+  if ((document.getElementById("forestQuotes").innerText == 'The leaves not green, earth-hued;') && (document.getElementById("forestQuotes").style.opacity == '')){
     document.getElementById("forestQuotes").style.opacity = '1';
-    setTimeout(function() {fadein}, waitTime)
-  }
+    setTimeout(function() {fadeinForest}, waitTime)
+  } else if (())
+  
 }
 
 /*
