@@ -12,7 +12,7 @@ function fadeinForest() {
   // first action
   if ((document.getElementById("forestQuotes").innerText == 'The leaves not green, earth-hued;') && (document.getElementById("forestQuotes").style.opacity == '')){
     document.getElementById("forestQuotes").style.opacity = '1';
-    setTimeout(function() {fadeinForest}, displayTime)
+    setTimeout(function() {fadeinForest}, waitTime)
   } 
   
   else if ((document.getElementById("forestQuotes").innerText == 'The leaves not green, earth-hued;') && (document.getElementById("forestQuotes").style.opacity == '1')){
