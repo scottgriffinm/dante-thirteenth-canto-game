@@ -4,7 +4,7 @@ var waitTime = 1;
 
 window.onload = function() {
   window.setTimeout(fadeinForest,
-                   1); //1 second wait
+                   1); //wait
 }
 
 
