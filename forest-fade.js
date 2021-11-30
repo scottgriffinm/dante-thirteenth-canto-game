@@ -3,11 +3,11 @@ var waitTime = 1000;
 
 
 
-window.onload = function() {
-  window.setTimeout(fadeinForest,
-                   waitTime); //wait
-}
 
+// window.onload = function() {
+//   window.setTimeout(fadeinForest,
+//                    waitTime); //wait
+// }
 
 function fadeinForest() {
   // first action
@@ -23,6 +23,9 @@ function fadeinForest() {
     
   
 }
+
+
+
 
 /*
 window.onload = function() {
