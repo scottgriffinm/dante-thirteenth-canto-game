@@ -1,10 +1,11 @@
 var displayTime = 10;
-var waitTime = 1;
+var waitTime = 1000;
+
 
 
 window.onload = function() {
   window.setTimeout(fadeinForest,
-                   1); //wait
+                   waitTime); //wait
 }
 
 
