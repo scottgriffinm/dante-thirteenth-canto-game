@@ -1,4 +1,4 @@
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from 'typewriter-effect';
 
 var menuQuotes = document.getElementById('menuQuotes');
 
