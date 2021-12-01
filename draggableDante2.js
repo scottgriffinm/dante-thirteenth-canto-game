@@ -50,11 +50,11 @@ let ball = document.getElementById("draggableDante");
     };
 
     function enterDroppable(elem) {
-      elem.style.background = 'red';
+      elem.style.opacity = 0.5;
     }
 
     function leaveDroppable(elem) {
-      elem.style.background = '';
+      elem.style.opacity = 0;
     }
 
     ball.ondragstart = function() {

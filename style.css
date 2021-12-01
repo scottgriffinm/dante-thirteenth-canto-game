@@ -50,14 +50,17 @@ a:active {
   left: 20%;
   top: 90%;
 }
-
 #forestHole {
-  position: absolute;
-  width: 6.0833em;
-  height: 5.2083em;
-  left: 52.5%;
-  top: 73.7%;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 5.2083em;
+    height: 5.2083em;
+    left: 52.5%;
+    top: 73.7%;
+    opacity: 0;
 }
+
 
 .backImage {
   width:100%;
