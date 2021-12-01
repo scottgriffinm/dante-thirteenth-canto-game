@@ -67,6 +67,12 @@ a:active {
   height:100%;
 }
 
+.underText {
+  padding-top: .5em;
+  text-align: center;
+}
+
+
 #menuQuotes {
   opacity: 0;
   transition: 5s opacity;
@@ -76,6 +82,7 @@ a:active {
   opacity: 0;
   transition: 5s opacity;
 }
+
 
 #GameContainerContainer {
   padding-top: 1.25em;

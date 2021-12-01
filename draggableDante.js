@@ -1,38 +1,67 @@
+let currentDroppable = null;
 let ball = document.getElementById("draggableDante");
 
-ball.onmousedown = function(event) {
 
-  let shiftX = event.clientX - ball.getBoundingClientRect().left;
-  let shiftY = event.clientY - ball.getBoundingClientRect().top;
+    ball.onmousedown = function(event) {
 
-  ball.style.position = 'absolute';
-  ball.style.zIndex = 1000;
-  document.body.append(ball);
+      let shiftX = event.clientX - ball.getBoundingClientRect().left;
+      let shiftY = event.clientY - ball.getBoundingClientRect().top;
 
-  moveAt(event.pageX, event.pageY);
+      ball.style.position = 'absolute';
+      ball.style.zIndex = 1000;
+      document.body.append(ball);
 
-  // moves the ball at (pageX, pageY) coordinates
-  // taking initial shifts into account
-  function moveAt(pageX, pageY) {
-    ball.style.left = pageX - shiftX + 'px';
-    ball.style.top = pageY - shiftY + 'px';
-  }
+      moveAt(event.pageX, event.pageY);
 
-  function onMouseMove(event) {
-    moveAt(event.pageX, event.pageY);
-  }
+      function moveAt(pageX, pageY) {
+        ball.style.left = pageX - shiftX + 'px';
+        ball.style.top = pageY - shiftY + 'px';
+      }
 
-  // move the ball on mousemove
-  document.addEventListener('mousemove', onMouseMove);
+      function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
 
-  // drop the ball, remove unneeded handlers
-  ball.onmouseup = function() {
-    document.removeEventListener('mousemove', onMouseMove);
-    ball.onmouseup = null;
-  };
+        ball.hidden = true;
+        let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+        ball.hidden = false;
 
-};
+        if (!elemBelow) return;
 
-ball.ondragstart = function() {
-  return false;
-};
+        let droppableBelow = elemBelow.closest('.droppable');
+        if (currentDroppable != droppableBelow) {
+          if (currentDroppable) { // null when we were not over a droppable before this event
+            leaveDroppable(currentDroppable);
+          }
+          currentDroppable = droppableBelow;
+          if (currentDroppable) { // null if we're not coming over a droppable now
+            // (maybe just left the droppable)
+            enterDroppable(currentDroppable);
+          }
+        }
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+
+      ball.onmouseup = function() {
+        if (currentDroppable) {
+          window.location.href = '/tree.html';
+        } else {
+          document.removeEventListener('mousemove', onMouseMove);
+          ball.onmouseup = null;  
+        }
+        
+      };
+
+    };
+
+    function enterDroppable(elem) {
+      elem.style.opacity = 0.5;
+    }
+
+    function leaveDroppable(elem) {
+      elem.style.opacity = 0;
+    }
+
+    ball.ondragstart = function() {
+      return false;
+    };
