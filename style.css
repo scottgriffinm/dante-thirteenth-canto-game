@@ -43,6 +43,13 @@ a:active {
   width: 100%;
 }
 
+#draggableDante {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  left: 20%;
+  top: 90%;
+}
 
 .backImage {
   width:100%;
