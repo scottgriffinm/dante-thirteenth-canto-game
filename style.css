@@ -67,18 +67,14 @@ a:active {
   height:100%;
 }
 
-.underText {
+#underText {
   padding-top: .5em;
   text-align: center;
-}
-
-
-#menuQuotes {
   opacity: 0;
   transition: 5s opacity;
 }
 
-#forestQuotes{
+#menuQuotes {
   opacity: 0;
   transition: 5s opacity;
 }
