@@ -69,9 +69,8 @@ a:active {
     height: 3em;
     left: 52.5%;
     top: 73.7%;
-    opacity: 1;
+    opacity: 0.5;
 }
-
 
 .backImage {
   width:100%;
