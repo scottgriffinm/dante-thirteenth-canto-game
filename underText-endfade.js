@@ -5,4 +5,5 @@ window.onload = function() {
 
 function fadein() {
   document.getElementById('underText').style.opacity = '1';
+  document.getElementById('endImage').style.opacity = '1';
 }
