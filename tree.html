@@ -11,12 +11,8 @@
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import javascript file -->
-    <script>
-      var treeHole = document.getElementById('boundary');
-      var mouseOverFunction = function () {
-    // this.style.color = '#000'; // your colour change
-};
-boundary.onmouseover = mouseOverFunction;</script>
+  
+  
   </head>
   <body>
     
@@ -28,6 +24,13 @@ boundary.onmouseover = mouseOverFunction;</script>
 function breakBranch() {
   window.location.href = '/brokenTree.html';
 }
+document.getElementById("treeHole").addEventListener("mouseover", function() {
+    document.getElementById("treeHole").style.opacity = 0.5;
+});
+    
+document.getElementById("treeHole").addEventListener("mouseout", function() {
+    document.getElementById("treeHole").style.opacity = 0;
+});
 </script>
         <div class="Quotes">
       </div>
