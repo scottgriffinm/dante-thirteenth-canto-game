@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import javascript file -->
-    <script src="/breakableTreeBranch.js"></script>
+    <script>
+      var treeHole = document.getElementById('boundary');
+      var mouseOverFunction = function () {
+    // this.style.color = '#000'; // your colour change
+};
+boundary.onmouseover = mouseOverFunction;</script>
   </head>
   <body>
     
@@ -21,7 +26,7 @@
       <div id="treeHole" onclick="breakBranch()"> </div>
       <script>
 function breakBranch() {
-  
+  window.location.href = '/brokenTree.html';
 }
 </script>
         <div class="Quotes">
