@@ -55,7 +55,7 @@ let ball = document.getElementById("draggableDante");
     };
 
     function enterDroppable(elem) {
-      elem.style.opacity = 0.5;
+      elem.style.opacity = 0.3;
     }
 
     function leaveDroppable(elem) {
