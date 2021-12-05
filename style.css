@@ -71,7 +71,23 @@ a:active {
     top: 36%;
     opacity: 0;
 }
+
+#bushHole {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    left: 32%;
+    top: 25%;
+    opacity: 0;
+}
 #leaveButton {
+  position: absolute;
+  left: 60%;
+  top: 90%;
+}
+#nextButton {
   position: absolute;
   left: 60%;
   top: 90%;

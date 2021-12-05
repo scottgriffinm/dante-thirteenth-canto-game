@@ -18,11 +18,26 @@
     <div id="GameContainerContainer">
     <div id="GameContainer">
       <img class="backImage" src="https://cdn.glitch.me/043378ab-3600-4494-be86-3cd6d7062f17%2Fbush.png?v=1638683303158"> </img>
+      <div id="bushHole" onclick="gatherBranches()"> </div>
+      <script>
+function gatherBranches() {
+  window.location.href = '/brokenBush2.html';
+}
+document.getElementById("bushHole").addEventListener("mouseover", function() {
+    document.getElementById("bushHole").style.opacity = 0.5;
+});
+    
+document.getElementById("bushHole").addEventListener("mouseout", function() {
+    document.getElementById("bushHole").style.opacity = 0;
+});
+</script>
       <div class="Quotes">
       </div>
     </div>
     <script src="/underText-fade.js" defer></script>
-  <div id="underText"></div>
+  <div id="underText">
+    Click on the bush's broken sticks to gather them.
+    </div>
     </div>
 
   </body>
