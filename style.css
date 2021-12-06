@@ -97,6 +97,14 @@ a:active {
   height:100%;
 }
 
+.textGIF {
+  position: absolute;
+  width: 20.625em;
+  height: 10.5625em;
+  left: 2%;
+  top: 2%;
+}
+
 #endImage{
   opacity: 0;
   transition: 5s opacity;
