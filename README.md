@@ -1,1 +1,1 @@
-Game based on thirteenth canto of Dante's Inferno. Live at https://dante-thirteenth-canto.glitch.me
+Game based on thirteenth canto of Dante's Inferno, live at https://dante-thirteenth-canto.glitch.me
